@@ -3,15 +3,22 @@
 using namespace std;
 
 int main(){
-    vector<int> arr;
+    // vector<int> arr;
 
-    vector<int> arr2(5,5);
-    for(int x: arr2)
-    cout << x << " ";
+    // vector<int> arr2(5,5);
+    // for(int x: arr2)
+    // cout << x << " ";
 
-    cout << "\n";
+    // cout << "\n";
 
-    vector<int> arr3 = {2, 3, 4, 5};
-    for(int x : arr3)
+    // vector<int> arr3 = {2, 3, 4, 5};
+    // for(int x : arr3)
+    // cout << x << " ";
+
+    vector<int> arr4 = {1 , 2, 3, 4, 5};
+    arr4.push_back(6);
+
+    arr4.insert(arr4.begin() + 1, 2);
+    for(int x : arr4)
     cout << x << " ";
 }
