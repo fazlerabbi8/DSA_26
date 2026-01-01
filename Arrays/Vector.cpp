@@ -19,6 +19,10 @@ int main(){
     arr4.push_back(6);
 
     arr4.insert(arr4.begin() + 1, 2);
+
+    arr4.pop_back();
     for(int x : arr4)
     cout << x << " ";
+
+    return 0;
 }
