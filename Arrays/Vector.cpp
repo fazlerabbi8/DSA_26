@@ -1,4 +1,5 @@
 #include<iostream>
+#include <algorithm> 
 #include <vector>
 using namespace std;
 
@@ -21,6 +22,7 @@ int main(){
     arr4.insert(arr4.begin() + 1, 2);
 
     arr4.pop_back();
+    arr4.erase(remove(arr4.begin(), arr4.end(), 2), arr4.end());
     for(int x : arr4)
     cout << x << " ";
 
