@@ -13,6 +13,8 @@ int main(){
     // cout << "\n";
 
     vector<int> arr3 = {2, 3, 4, 5};
+   for(auto it = arr3.begin(); it != arr3.end(); ++it)
+   cout << ' ' << *it;
     // for(int x : arr3)
     // cout << x << " ";
 
@@ -29,8 +31,8 @@ int main(){
     arr4.erase(remove(arr4.begin(), arr4.end(), 2), arr4.end());
     // cout << arr4.at(2) << "\n";
     arr3.swap(arr4);
-    for(int x : arr4)
-    cout << x << " ";
+    // for(int x : arr4)
+    // cout << x << " ";
 
     return 0;
 }
