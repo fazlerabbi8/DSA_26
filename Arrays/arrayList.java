@@ -14,6 +14,8 @@ public class arrayList {
 
         arr.remove("robi");
 
+        arr.set(0, "Rabbi");
+
         System.out.println(arr);
     }
 }
