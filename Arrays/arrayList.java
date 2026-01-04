@@ -9,12 +9,14 @@ public class arrayList {
         arr.add("ahmed");
         arr.add(1,"robi");
 
-        arr.remove(0);
-        arr.remove("robi");
+        // arr.remove(0);
+        // arr.remove("robi");
 
         arr.set(0, "Rabbi");
         
-        System.out.println(arr.contains("robi"));
+        arr.forEach(System.out::println);
+
+        // System.out.println(arr.contains("robi"));
 
         // ArrayList<String> arr2 = new ArrayList<>();
         
