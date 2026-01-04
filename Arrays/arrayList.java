@@ -16,6 +16,7 @@ public class arrayList {
         
         arr.forEach(System.out::println);
 
+        System.out.println(arr.indexOf("Rabbi"));
         // System.out.println(arr.contains("robi"));
 
         // ArrayList<String> arr2 = new ArrayList<>();
