@@ -12,7 +12,7 @@ typedef struct
 
 Stack*  createStack(int capacity)
 {
-    Stack* stack = (struct Stack*)malloc(sizeof(struct Stack));
+    Stack* stack = (Stack*)malloc(sizeof(Stack));
     stack->capacity = capacity;
     stack->top = -1;
     stack->array = (int*)malloc(stack->capacity * sizeof(int));
