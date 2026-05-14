@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Stack
+typedef struct
 {
    int top;
    int capacity;
    int *array;
-};
+} Stack;
 
 
-struct Stack*  createStack(int capacity)
+Stack*  createStack(int capacity)
 {
-    struct Stack* stack = (struct Stack*)malloc(sizeof(struct Stack));
+    Stack* stack = (struct Stack*)malloc(sizeof(struct Stack));
     stack->capacity = capacity;
     stack->top = -1;
     stack->array = (int*)malloc(stack->capacity * sizeof(int));
