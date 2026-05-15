@@ -18,3 +18,12 @@ Stack*  createStack(int capacity)
     stack->array = (int*)malloc(stack->capacity * sizeof(int));
     return stack;
 }
+
+int isFull(Stack* stack)
+{
+    return stack->top == stack->capacity - 1;
+}
+
+
+
+
