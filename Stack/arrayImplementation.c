@@ -40,3 +40,20 @@ void push(Stack* stack, int value)
     stack->array[++stack->top] = value;
 }
 
+
+void displayStack(Stack* stack)
+{
+    if(isEmpty(stack))
+    {
+        printf("Stack is empty\n");
+    }
+    else
+    {
+        for(int x = stack->top; i >= 0; i--)
+        {
+            printf("%d\n", stack->array[i]);
+        }
+    }
+}
+
+
