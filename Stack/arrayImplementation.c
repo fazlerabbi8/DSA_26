@@ -29,4 +29,14 @@ int isEmpty(Stack* stack)
     return stack->top = -1;
 }
 
+void push(Stack* stack, int value)
+{
+    if(isFull(stack))
+    {
+        printf("Stack Overflow! Stack is full.\n");
+        return;
+    }
+
+    stack->array[++stack->top] = value;
+}
 
