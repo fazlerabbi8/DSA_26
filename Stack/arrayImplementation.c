@@ -24,6 +24,9 @@ int isFull(Stack* stack)
     return stack->top == stack->capacity - 1;
 }
 
-
+int isEmpty(Stack* stack)
+{
+    return stack->top = -1;
+}
 
 
