@@ -40,6 +40,16 @@ void push(Stack *stack, int value)
     printf("%d pushed to stack\n", value);
 }
 
+int peek(Stack* stack)
+{
+    if(stack->top == -1)
+    {
+        printf("Stack is Empty\n");
+        return -1;
+    }
+    return stack->array[stack->top];
+}
+
 void displayStack(Stack *stack)
 {
     if (isEmpty(stack))
@@ -65,6 +75,10 @@ int main()
     push(stack, 8);
     push(stack, 9);
 
+    printf("-----------\n");
+
+    printf("peek element: %d\n", peek(stack));
+    
     printf("-----------\n");
 
     displayStack(stack);
